@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/kisspng-computer-icons-calculator-calculation-calculator-5adc65693adb96.5406663615243933212411.png" type="image/x-icon">
+</head>
+<body>
+    <div id="contenedor">
+       <form action="" name="calculator">
+        <input type="textfield" autocomplete="off" value="" name="ans" readonly id="marco">
+        <div class="fila">
+            <input type="button" value="7" class="numer" onclick="document.calculator.ans.value+='7'" >
+            <input type="button" value="8" class="numer" onclick="document.calculator.ans.value+='8'" >
+            <input type="button" value="9" class="numer" onclick="document.calculator.ans.value+='9'" >
+            <input type="button" value="+" class="ope" onclick="document.calculator.ans.value+='+'" >
+        </div>
+        <div class="fila">
+            <input type="button" value="4" class="numer" onclick="document.calculator.ans.value+='4'" >
+            <input type="button" value="5" class="numer" onclick="document.calculator.ans.value+='5'" >
+            <input type="button" value="6" class="numer" onclick="document.calculator.ans.value+='6'" >
+            <input type="button" value="-" class="ope" onclick="document.calculator.ans.value+='-'" >
+        </div>
+        <div class="fila">
+            <input type="button" value="1" class="numer" onclick="document.calculator.ans.value+='1'" >
+            <input type="button" value="2" class="numer" onclick="document.calculator.ans.value+='2'" >
+            <input type="button" value="3" class="numer" onclick="document.calculator.ans.value+='3'" >
+            <input type="button" value="x" class="ope" onclick="document.calculator.ans.value+='*'" >
+        </div>
+        <div class="fila">
+            <input type="button" value="0" class="numer" onclick="document.calculator.ans.value+='0'" >
+            <input type="reset" value="c" class="spe">
+            <input type="button" value="=" class="spe" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" >
+            <input type="button" value="/" class="ope" onclick="document.calculator.ans.value+='/'" >
+        </div>
+       </form> 
+    </div>
+</body>
+</html>
